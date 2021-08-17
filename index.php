@@ -20,7 +20,7 @@
       <div class="nav">
         <!--Logo-->
         <div id="inicio" class="inicio">
-          <a href="index.html"><img src="./img/logo/logo_transparent.png" /></a>
+          <a href="index.php"><img src="./img/logo/logo_transparent.png" /></a>
         </div> 
         <!--Buscador-->
           <div class="">
