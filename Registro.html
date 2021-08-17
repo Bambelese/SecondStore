@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./Registro.css" />
+	<link rel="stylesheet" type="text/css" href="./estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+    <title>Resgistro</title>
+  </head>
+  <body>
+	<header>
+		<div class="nav">
+		  <!--Logo-->
+		  <div id="inicio" class="inicio">
+			<a href="index.html"><img src="./img/logo/logo_transparent.png" /></a>
+		  </div> 
+		  <!--Buscador-->
+			<div class="">
+			  <div class="buscar">
+				<input type="text" name="search" class="search" placeholder="Buscar productos, marcas y mas..." required="" />
+				<button><img src="img/search.png" /></button>
+			  </div>
+			</div>
+		  <!--Opciones-->   
+			<div class="menu">
+			  <ul>
+				<li id="item">
+				  <a href="">Categorias</a>
+				  <ul class="desple">
+					<li><a href="Moda.html">Moda</a></li>
+					<li><a href="Electro.html">Electrodomésticos</a></li>
+					<li><a href="Muebles.html">Muebles</a></li>
+				  </ul>
+				</li>
+				<li id="item"><a href="Login.html">Ingresar</a></li>
+				<li id="item"><a href="Ayuda.html">Ayuda</a></li>
+			  </ul>
+			</div>
+		</div>
+		</div>
+	  </header>
+
+	  <section>
+		  <div class="container">
+			<div class="contForm">
+				<form action="" method="POST" id="form">
+					<div class="registro">
+					  <h1>Registrate</h1>
+					  <div class="grupo">
+						<input type="text" name="" id="nombre" required="" placeholder="Name"/>
+					  </div>
+					  <div class="grupo">
+						<input type="text" name="" id="apellido" required="" placeholder="Last Name"/>
+					  </div>
+					  <div class="grupo">
+						<input type="email" name="" id="email" required="" placeholder="Email"/>
+					  </div>
+					  <div class="grupo">
+						<input type="password" name="" id="contra" required="" placeholder="Password"/>
+					  </div>
+			  
+					  <button type="submit">Registrarme</button>
+					  <p>Si ya tienes una cuenta ingresa <a href="Login.html">Aqui</a></p>
+					</div>
+				  </form>
+			  </div>
+		  </div>
+	  </section>
+
+
+    <footer>
+      <div class="footer">
+        <p class="text">| Copyright 2021 Second Shop todos los derechos reservados |</p>
+      </div>
+    </footer>
+
+    <script type="main.js"></script>
+  </body>
+</html>
