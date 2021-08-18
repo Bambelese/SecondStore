@@ -45,7 +45,24 @@
 	  <section>
 		  <div class="container">
 			  <div class="contForms">
-				<div class="contForm">
+				  <div class="contForm" id="formLogin">
+					<form method="POST" id="form">
+						<div class="login">
+						  <h1>Inicia Session</h1>
+						  <div class="grupo">
+							<input type="email" name="" id="email" required="" /><span class="barra"></span>
+						  </div>
+						  <div class="grupo">
+							<input type="password" name="" id="contra" required="" /><span class="barra"></span>
+						  </div>
+				
+						  <button type="submit">Entrar</button>
+						  <p>Si no tienes una cuenta puedes registrarte <button type="button" class="showLog">Aqui</button></p>
+						</div>
+					  </form>
+				  </div>
+
+				  <div class="contForm" id="formRegister">
 					<form method="POST" id="registerUser">
 						<div class="registro">
 						  <h1>Registrate</h1>
@@ -62,23 +79,7 @@
 							<input type="password" name="contra" id="contra" required="" placeholder="Password"/>
 						  </div>
 						  <button type="submit">Registrarme</button>
-						  <p>Si ya tienes una cuenta ingresa <a href="Login.html">Aqui</a></p>
-						</div>
-					  </form>
-				  </div>
-				  <div class="contForm">
-					<form method="POST" id="form">
-						<div class="login">
-						  <h1>Inicia Session</h1>
-						  <div class="grupo">
-							<input type="email" name="" id="email" required="" /><span class="barra"></span>
-						  </div>
-						  <div class="grupo">
-							<input type="password" name="" id="contra" required="" /><span class="barra"></span>
-						  </div>
-				
-						  <button type="submit">Entrar</button>
-						  <p>Si no tienes una cuenta puedes registrarte <a href="Registro.html">Aqui</a></p>
+						  <p>Si ya tienes una cuenta ingresa <button type="button" class="showReg">Aqui</button></p>
 						</div>
 					  </form>
 				  </div>
@@ -94,6 +95,7 @@
     </footer>
 
     <script type="main.js"></script>
+	<script src="./frontend/animations/formLogin.js"></script>
 	<script src="./backend/js/newUser.js"></script>
   </body>
 </html>
