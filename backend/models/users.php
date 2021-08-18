@@ -4,7 +4,7 @@
         public $lastName;
         public $email;
         public $pass;
-                 
+        
         public function Create(){
             $connectionInfo = array("UID" => "bambelese", "pwd" => "Angelo2324", "Database" => "SecondStore", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
             $serverName = "tcp:secondstore.database.windows.net,1433";

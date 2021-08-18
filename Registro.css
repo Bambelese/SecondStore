@@ -4,6 +4,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.contForms{
+	display: flex;
+    align-items: center;
+    background: white;
+    width: 340px;
+    overflow: hidden;
+}
+
 .contForm{
 	display: flex;
 	align-items: center;
@@ -14,12 +23,21 @@
 	height: 380px;
 }
 
+.contForm>form{
+	width: 340px;
+    display: flex;
+    justify-content: center;
+}
+
 #form{
 	text-align: center;
 	display: flex;
 	justify-content: center;
 }
 
+.registro>h1{
+	text-align: center;
+}
 
 .grupo{
 	position: relative;

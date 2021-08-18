@@ -8,8 +8,6 @@
         $user->lastName=$_POST['apellido'];
         $user->email=$_POST['email'];
         $user->pass=$_POST['contra'];
-        //$pru=$_POST['nombre'];
-        //echo $pru;
         $user->Create();
     }
     
