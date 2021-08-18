@@ -1,3 +1,9 @@
+<?php 
+	include("backend/models/users.php");
+
+	$user = new User();
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -46,14 +52,14 @@
 		  <div class="container">
 			  <div class="contForms">
 				  <div class="contForm" id="formLogin">
-					<form method="POST" id="form">
+					<form method="POST" id="logUser">
 						<div class="login">
 						  <h1>Inicia Session</h1>
 						  <div class="grupo">
-							<input type="email" name="" id="email" required="" /><span class="barra"></span>
+							<input type="email" name=""  required="" /><span class="barra"></span>
 						  </div>
 						  <div class="grupo">
-							<input type="password" name="" id="contra" required="" /><span class="barra"></span>
+							<input type="password" name=""  required="" /><span class="barra"></span>
 						  </div>
 				
 						  <button type="submit">Entrar</button>
@@ -67,16 +73,16 @@
 						<div class="registro">
 						  <h1>Registrate</h1>
 						  <div class="grupo">
-							<input type="text" name="nombre" id="nombre" required="" placeholder="Name"/>
+							<input type="text" name="nombre"  required="" placeholder="Name"/>
 						  </div>
 						  <div class="grupo">
-							<input type="text" name="apellido" id="apellido" required="" placeholder="Last Name"/>
+							<input type="text" name="apellido"  required="" placeholder="Last Name"/>
 						  </div>
 						  <div class="grupo">
-							<input type="email" name="email" id="email" required="" placeholder="Email"/>
+							<input type="email" name="email"  required="" placeholder="Email"/>
 						  </div>
 						  <div class="grupo">
-							<input type="password" name="contra" id="contra" required="" placeholder="Password"/>
+							<input type="password" name="contra"  required="" placeholder="Password"/>
 						  </div>
 						  <button type="submit">Registrarme</button>
 						  <p>Si ya tienes una cuenta ingresa <button type="button" class="showReg">Aqui</button></p>

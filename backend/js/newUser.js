@@ -1,3 +1,4 @@
+//REGISTRO USUARIO
 const formUser = document.getElementById("registerUser");
 
 formUser.onsubmit = (e) => {
@@ -8,6 +9,28 @@ formUser.onsubmit = (e) => {
         return response.text();
       } else {
         alert("error!");
+      }
+    })
+    .then((text) => {
+      console.log(text);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  e.preventDefault();
+};
+
+//LOGEO USUARIO
+const formLogUser = document.getElementById("logUser");
+
+formLogUser.onsubmit = (e) => {
+  const data = new FormData(document.getElementById("logUser"));
+  fetch("backend/controllers/verifyLogUser.php", { body: data, method: "POST" })
+    .then((response) => {
+      if (response.ok) {
+        return response.text;
+      } else {
+        alert("error");
       }
     })
     .then((text) => {
