@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./Registro.css" />
 	<link rel="stylesheet" type="text/css" href="./estilos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Resgistro</title>
   </head>
   <body>
@@ -44,22 +45,21 @@
 	  <section>
 		  <div class="container">
 			<div class="contForm">
-				<form action="" method="POST" id="registerUser">
+				<form method="POST" id="registerUser">
 					<div class="registro">
 					  <h1>Registrate</h1>
 					  <div class="grupo">
-						<input type="text" name="txtName" id="nombre" required="" placeholder="Name"/>
+						<input type="text" name="nombre" id="nombre" required="" placeholder="Name"/>
 					  </div>
 					  <div class="grupo">
-						<input type="text" name="txtLastName" id="apellido" required="" placeholder="Last Name"/>
+						<input type="text" name="apellido" id="apellido" required="" placeholder="Last Name"/>
 					  </div>
 					  <div class="grupo">
-						<input type="email" name="txtEmail" id="email" required="" placeholder="Email"/>
+						<input type="email" name="email" id="email" required="" placeholder="Email"/>
 					  </div>
 					  <div class="grupo">
-						<input type="password" name="txtPass" id="contra" required="" placeholder="Password"/>
+						<input type="password" name="contra" id="contra" required="" placeholder="Password"/>
 					  </div>
-
 					  <button type="submit">Registrarme</button>
 					  <p>Si ya tienes una cuenta ingresa <a href="Login.html">Aqui</a></p>
 					</div>

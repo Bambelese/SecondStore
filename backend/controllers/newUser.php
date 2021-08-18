@@ -1,15 +1,16 @@
 <?php 
-    require_once("../models/user.php");
+    require_once("../models/users.php");
 
     $user = new User();
 
     if($_POST){
-        $user->name=$_POST['txtName'];
-        $user->lastName=$_POST['txtLastName'];
-        $user->email=$_POST['txtEmail'];
-        $user->pass=$_POST['txtPass'];
-
+        $user->name=$_POST['nombre'];
+        $user->lastName=$_POST['apellido'];
+        $user->email=$_POST['email'];
+        $user->pass=$_POST['contra'];
+        //$pru=$_POST['nombre'];
+        //echo $pru;
         $user->Create();
     }
-
+    
 ?>
