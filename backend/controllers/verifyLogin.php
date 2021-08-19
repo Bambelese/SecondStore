@@ -35,22 +35,4 @@ if($_POST){
     //}else{
     //    echo "no";
     //}
-
-//$connectionInfo = array("UID" => "bambelese", "pwd" => "Angelo2324", "Database" => "SecondStore", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-//$serverName = "tcp:secondstore.database.windows.net,1433";
-//$conn = sqlsrv_connect($serverName, $connectionInfo);
-//
-//$query = "{call sp_verifyLogin (?,?)}";
-//$params = array(array("fonscia_cob1905@hotmail.com",SQLSRV_PARAM_IN),
-//                array("root",SQLSRV_PARAM_IN));
-//
-//$stmp=sqlsrv_prepare($conn, $query, $params);
-//
-//if(sqlsrv_execute( $stmp ) === false){
-//    die( print_r( sqlsrv_errors(), true));
-//} 
-//while( $row = sqlsrv_fetch_array( $stmp, SQLSRV_FETCH_NUMERIC) ) {
-//    echo $row[0].", ".$row[1]."<br />";
-//}
-
 ?>
