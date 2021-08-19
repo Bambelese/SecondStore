@@ -1,14 +1,13 @@
-
-<!--  include 'backend/class/conection.php';
-  $db=new Connection();
- $db->getConnection();
-  ?>-->
-
+<?php 
+  session_start();
+  error_reporting(0);
+  $session=$_SESSION['username'];
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" media="screen" href="estilos.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../estilos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +19,13 @@
       <div class="nav">
         <!--Logo-->
         <div id="inicio" class="inicio">
-          <a href="index.php"><img src="./img/logo/logo_transparent.png" /></a>
+          <a href="index.php"><img src="../img/logo/logo_transparent.png" /></a>
         </div> 
         <!--Buscador-->
           <div class="">
             <div class="buscar">
               <input type="text" name="search" class="search" placeholder="Buscar productos, marcas y mas..." required="" />
-              <button><img src="img/search.png" /></button>
+              <button><img src="../img/search.png" /></button>
             </div>
           </div>
         <!--Opciones-->   
@@ -40,8 +39,13 @@
                   <li><a href="Muebles.html">Muebles</a></li>
                 </ul>
               </li>
-              <li id="item"><a href="Login.html">Ingresar</a></li>
-              <li id="item"><a href="Ayuda.html">Ayuda</a></li>
+              <?php if($session == null || ''){?>
+                <li id="item"><a href="../Registro.html">Ingresar</a></li>
+
+              <?php }else{ ?>
+                <li id="item"><a href="#"><?php echo $_SESSION['username'] ?></a></li>
+                <li id="item"><a href="controllers/logOut.php">Cerrar Sesion</a></li>
+              <?php }?>
             </ul>
           </div>
       </div>
@@ -55,19 +59,19 @@
         <div class="contenedor-slider">
           <div class="slider" id="slider">
             <div class="slider__seccion">
-              <img src="img/slide1.webp" alt="" class="slider__img" />
+              <img src="../img/slide1.webp" alt="" class="slider__img" />
             </div>
             <div class="slider__seccion">
-              <img src="img/slide2.webp" alt="" class="slider__img" />
+              <img src="../img/slide2.webp" alt="" class="slider__img" />
             </div>
             <div class="slider__seccion">
-              <img src="img/slide3.webp" alt="" class="slider__img" />
+              <img src="../img/slide3.webp" alt="" class="slider__img" />
             </div>
             <div class="slider__seccion">
-              <img src="img/slide4.webp" alt="" class="slider__img" />
+              <img src="../img/slide4.webp" alt="" class="slider__img" />
             </div>
             <div class="slider__seccion">
-              <img src="img/slide5.webp" alt="" class="slider__img" />
+              <img src="../img/slide5.webp" alt="" class="slider__img" />
             </div>
           </div>
           <div class="slider__btn slider__btn--derecha" id="btn-derecha">&#62;</div>
@@ -89,7 +93,7 @@
                 <p>DESCUBRE</p>
                 <p>LO MEJOR EN<br> SUPLEMENTOS</p>
               </div>
-              <img src="./img/products/suplements.webp" alt="">
+              <img src="../img/products/suplements.webp" alt="">
             </div>
           
             <div class="widget">
@@ -97,7 +101,7 @@
                 <p>HASTA 40% DSCTO</p>
                 <p>RENUEVA <br> TU CELULAR</p>
               </div>
-              <img src="./img/products/smartphone.webp" alt="">
+              <img src="../img/products/smartphone.webp" alt="">
             </div>
           </div>
         </div>
@@ -115,7 +119,7 @@
                 <p>HASTA 40% DSCTO</p>
                 <p>EQUIPA<br> TU COCINA</p>
               </div>
-              <img src="./img/products/cook.webp" alt="">
+              <img src="../img/products/cook.webp" alt="">
             </div>
           
             <div class="widget">
@@ -123,7 +127,7 @@
                 <p>TECNOLOGÍA</p>
                 <p>30% DSCTO<br>EN COOLBOX</p>
               </div>
-              <img src="./img/products/ps5.webp" alt="">
+              <img src="../img/products/ps5.webp" alt="">
             </div>
           </div>
         </div>
@@ -138,6 +142,6 @@
         </div>
       </footer>
 
-    <script src="slider.js"></script>
+    <script src="../slider.js"></script>
   </body>
 </html>

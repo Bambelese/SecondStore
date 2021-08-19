@@ -34,8 +34,7 @@
 					<li><a href="Muebles.html">Muebles</a></li>
 				  </ul>
 				</li>
-				<li id="item"><a href="Login.html">Ingresar</a></li>
-				<li id="item"><a href="Ayuda.html">Ayuda</a></li>
+				<li id="item"><a href="Registro.html">Ingresar</a></li>
 			  </ul>
 			</div>
 		</div>
@@ -46,14 +45,14 @@
 		  <div class="container">
 			  <div class="contForms">
 				  <div class="contForm" id="formLogin">
-					<form method="POST" id="form">
+					<form method="POST" id="logUser" action="./backend/controllers/verifyLogin.php">
 						<div class="login">
-						  <h1>Inicia Session</h1>
+						  <h1>Sign in</h1>
 						  <div class="grupo">
-							<input type="email" name="" id="email" required="" /><span class="barra"></span>
+							<input type="email" name="email" required="" /><span class="barra"></span>
 						  </div>
 						  <div class="grupo">
-							<input type="password" name="" id="contra" required="" /><span class="barra"></span>
+							<input type="password" name="pass" required="" /><span class="barra"></span>
 						  </div>
 				
 						  <button type="submit">Entrar</button>
@@ -65,18 +64,18 @@
 				  <div class="contForm" id="formRegister">
 					<form method="POST" id="registerUser">
 						<div class="registro">
-						  <h1>Registrate</h1>
+						  <h1>Register</h1>
 						  <div class="grupo">
-							<input type="text" name="nombre" id="nombre" required="" placeholder="Name"/>
+							<input type="text" name="nombre" required="" placeholder="Name"/>
 						  </div>
 						  <div class="grupo">
-							<input type="text" name="apellido" id="apellido" required="" placeholder="Last Name"/>
+							<input type="text" name="apellido" required="" placeholder="Last Name"/>
 						  </div>
 						  <div class="grupo">
-							<input type="email" name="email" id="email" required="" placeholder="Email"/>
+							<input type="email" name="email" required="" placeholder="Email"/>
 						  </div>
 						  <div class="grupo">
-							<input type="password" name="contra" id="contra" required="" placeholder="Password"/>
+							<input type="password" name="contra" required="" placeholder="Password"/>
 						  </div>
 						  <button type="submit">Registrarme</button>
 						  <p>Si ya tienes una cuenta ingresa <button type="button" class="showReg">Aqui</button></p>
