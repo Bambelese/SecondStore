@@ -2,6 +2,15 @@
     width: 90%;
     margin: auto;
 }
+.itCategories{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.opCategory{
+    height:250px;
+    width: 200px;
+}
 .contS{
     display: flex;
     align-items: center;

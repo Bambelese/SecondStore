@@ -61,12 +61,8 @@
                         <div class="contSecond">
                             <h1>Indica tu producto, marca y modelo</h1>
                             <p>Este será el título. Ten en cuenta que cuando tengas ventas, no podrás editarlo</p>
-                            <form>
-                                <div id="s">
-                                </div>
-                                <input type="text" name="product">
-                                <button type="submit">Continue</button>
-                            </form>
+                            <div id="s" class="itCategories"> 
+                            </div>
                         </div>
                     </div>
                 </div>

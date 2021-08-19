@@ -12,7 +12,11 @@ require_once("../models/categoria.php");
     foreach ($listJsonDecode as $categories) {
          $sd=$categories['Categoria'];
          //print_r ($sd);
-         print '<div><p class="opCategory">'.$sd.'</p></div';
+         print '<div class="itCategories">
+                    <div class="opCategory">
+                        <p>'.$sd.'</p>
+                    </div>
+                </div';
          //$array = array(["category" => $categories]);
          //$s=json_encode($array);
          //print_r($s); json_decode($s,true);
