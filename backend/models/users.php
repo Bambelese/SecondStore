@@ -47,7 +47,7 @@
             $row_count = sqlsrv_num_rows( $stmp );//OBTIENE LA CANTIDAD DE FILAS
 
             if ($row_count == false){
-                return $row_count;
+                return "No hay fila";
             }else{
                 while( $row = sqlsrv_fetch_array( $stmp)){
                     $array[]=$row['id'];
@@ -55,7 +55,7 @@
                 }
                 return $array;
             }
-            //sqlsrv_close($conn);
+            sqlsrv_close($conn);
         }
     }
 

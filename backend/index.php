@@ -43,7 +43,12 @@
                 <li id="item"><a href="../Registro.html">Ingresar</a></li>
 
               <?php }else{ ?>
-                <li id="item"><a href="#"><?php echo $_SESSION['username'] ?></a></li>
+                <li id="item">
+                    <a href="#"><?php echo $_SESSION['username'] ?></a>
+                    <ul class="desple">
+                        <li><a href="views/publishProduct.php">Vender</a></li>
+                    </ul>
+                </li>
                 <li id="item"><a href="controllers/logOut.php">Cerrar Sesion</a></li>
               <?php }?>
             </ul>
@@ -133,9 +138,7 @@
         </div>
       </section>
     </section>
-
-        
-
+   
       <footer>
         <div class="footer">
           <p class="text">| Copyright 2021 Second Shop todos los derechos reservados |</p>
