@@ -4,6 +4,8 @@
         public $lastName;
         public $email;
         public $pass;
+
+        public $outNameU=0;
         
         public function Create(){
             $connectionInfo = array("UID" => "bambelese", "pwd" => "Angelo2324", "Database" => "SecondStore", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
@@ -18,6 +20,8 @@
             if(sqlsrv_execute( $stmp ) === false){
                 die( print_r( sqlsrv_errors(), true));
             }
+
+            sqlsrv_close($conn);
         }
 
         public function VerifyLogin(){

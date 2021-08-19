@@ -1,3 +1,4 @@
+//REGISTRO USUARIO
 const formUser = document.getElementById("registerUser");
 
 formUser.onsubmit = (e) => {
@@ -18,21 +19,6 @@ formUser.onsubmit = (e) => {
     });
   e.preventDefault();
 };
-
-////LOGEO USUARIO
-//const formLogUser = document.getElementById("logUser");
-//
-//formLogUser.onsubmit = (e) => {
-//  const dataa = new FormData(document.getElementById("logUser"));
-//  fetch("backend/controllers/verifyLogin.php", { body: dataa, method: "POST" }).then((response) => {
-//    if (response.ok) {
-//      return response.text;
-//    } else {
-//      alert("error");
-//    }
-//  });
-//  e.preventDefault();
-//};
 
 //$("#registerUser").submit(function (event) {
 //  var parametros = $(this).serialize();
