@@ -1,3 +1,5 @@
+var products = [];
+
 let btnBuy = document.querySelectorAll(".buyProd");
 
 for (let i = 0; i < btnBuy.length; i++) {
@@ -8,8 +10,12 @@ for (let i = 0; i < btnBuy.length; i++) {
     let codClient = e.target.getAttribute("data-cl");
     let proveedor = e.target.getAttribute("data-prov");
     let price = e.target.getAttribute("data-price");
+    let quantity = e.path[1].children[0].value;
 
-    console.log(idProd, product, codCategory, codClient, proveedor, price);
-    let objProduct = new Product(idProd, codCategory, codClient, product, proveedor, price);
+    let objProduct = new Product(idProd, codCategory, codClient, product, proveedor, price, quantity);
+
+    products.push(objProduct);
+
+    localStorage.setItem("products", JSON.stringify(objProduct));
   };
 }
