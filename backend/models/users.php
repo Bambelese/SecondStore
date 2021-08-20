@@ -36,9 +36,6 @@
             $params = array(array($this->email,SQLSRV_PARAM_IN),
                             array($this->pass,SQLSRV_PARAM_IN));
 
-            //$params = array(array("fonscia_cob1905@hotmail.com",SQLSRV_PARAM_IN),
-            //array("root",SQLSRV_PARAM_IN));
-
             $options =  array( "Scrollable" => SQLSRV_CURSOR_KEYSET );
 
             $stmp = sqlsrv_query($conn, $query, $params,$options);
