@@ -61,7 +61,7 @@
                     </ul>
                   </li>
                   <?php if($session == null || ''){?>
-                    <li class="item"><a href="../Registro.html">Ingresar</a></li>
+                    <li class="item"><a href="../../Registro.html">Ingresar</a></li>
                   <?php }else{ ?>
                     <li class="item">
                         <a href="#"><?php echo $_SESSION['username'] ?></a>
@@ -84,7 +84,7 @@
                     <div class="dProd">
                         <p class="prod"><?php echo $product['product'] ?></p>
                         <p class="prod">Vendido por <?php echo $product['proveedor'] ?></p>
-                        <p class="prod">$ <?php echo $product['Precio'] ?></p>
+                        <p class="prod">S/. <?php echo $product['Precio'] ?></p>
                     </div>
                     <div class="opProd">
                       <input type="number" value="1" min="1" max="<?php echo $product['Cantidad'];?>">

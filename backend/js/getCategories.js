@@ -5,6 +5,7 @@ const quantityProd = document.getElementById("quantityProduct");
 const firstSection = document.getElementById("firstSection");
 const secondSection = document.getElementById("secondSection");
 const newProduct = document.getElementById("newProduct");
+let conditionProd = document.getElementById("conditionProd").value;
 
 secondSection.style.display = "none";
 newProduct.style.display = "none";
@@ -40,13 +41,11 @@ const btnNewProduct = document.getElementById("newProduct");
 const formDataProduct = new FormData();
 
 btnNewProduct.onclick = () => {
-  console.log(quantityProd);
   formDataProduct.append("product", nomProd.value);
   formDataProduct.append("price", priceProd.value);
   formDataProduct.append("quantity", quantityProd.value);
   formDataProduct.append("idCategory", idCategory);
+  formDataProduct.append("condition", conditionProd);
 
   fetch("../controllers/createProduct.php", { body: formDataProduct, method: "POST" });
-  //console.log(nomProd.value);
-  //console.log(idCategory);
 };

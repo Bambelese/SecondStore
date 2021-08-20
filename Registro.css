@@ -48,12 +48,18 @@
 	padding: 10px;
 }
 .grupo>input{
-	border:0px;
-	border-bottom: 1px solid gray;
-	height: 30px;
+	border:1px solid rgb(99, 99, 102);
+	border-radius: 4px;
+	height: 40px;
 	width: 85%;
 	padding: 7px;
 	font-size: 1rem;
+}
+.grupo>input:hover{
+	border:2px solid rgb(0, 122, 255);
+}
+.grupo>input:focus{
+	border:2px solid rgb(0, 122, 255);
 }
 
 

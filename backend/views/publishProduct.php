@@ -32,7 +32,7 @@
                         <li><a href="publishProduct.php">Vender</a></li>
                     </ul>
                 </li>
-                <li class="item"><a href="controllers/logOut.php">Cerrar Sesion</a></li>
+                <li class="item"><a href="../controllers/logOut.php">Cerrar Sesion</a></li>
               <?php }?>
             </ul>
           </div>
@@ -51,13 +51,18 @@
                             <img src="../../img/publish.svg" alt="">
                         </div>
                         <div class="contSecond" id="firstSection">
-                            <h1>Indica tu producto, marca y modelo</h1>
-                            <p>Este será el título. Ten en cuenta que cuando tengas ventas, no podrás editarlo</p>
-
-                                <input type="text" name="product" id="product" placeholder="Name Product">
-                                <input type="number" name="price" id="priceProduct" placeholder="Price">
-                                <input type="number" name="quantity" id="quantityProduct" placeholder="Quantity">
-                                <button type="button" id="getCategories">Continue</button>
+                          <h1>Indica tu producto, marca y modelo</h1>
+                          <p>Este será el título. Ten en cuenta que cuando tengas ventas, no podrás editarlo</p>
+                          <div class="formProd">
+                            <input type="text" name="product" id="product" class="input" placeholder="Name Product">
+                            <input type="number" name="price" id="priceProduct" class="input" placeholder="Price" min="1">
+                            <input type="number" name="quantity" id="quantityProduct" class="input" placeholder="Quantity" min="1">
+                            <select class="select" id="conditionProd" aria-label="Disabled select example">
+                              <option value="Nuevo" selected>Nuevo</option>
+                              <option value="Usado">Usado</option>
+                            </select>
+                          </div>
+                          <button type="button" id="getCategories">Continue</button>
                         </div>
                         <div class="contSecond" id="secondSection">
                             <h1>Indica la categoria que pertenece tu producto</h1>

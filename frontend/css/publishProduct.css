@@ -56,18 +56,40 @@
   padding: 30px;
 }
 
-.contSecond>input {
+.contSecond div > input {
   border-radius: 4px;
-  height: 30px;
+  height: 40px;
   padding: 4px;
   border: 1px solid gray;
 }
 
-.contSecond>input:hover {
-  border: 1px solid rgb(0, 122, 255);
+.contSecond div > input:hover {
+  border: 2px solid rgb(0, 122, 255);
 }
 
-.contSecond>input:focus {
+.contSecond div > input:focus {
+  outline: none;
+  border: 2px solid rgb(0, 122, 255);
+}
+
+#product {
+  width: 100%;
+}
+.formProd {
+  margin-top: 20px;
+}
+.input {
+  font-size: 1rem;
+  margin: 15px 0px;
+}
+.select {
+  border-radius: 4px;
+  font-size: 1rem;
+  height: 40px;
+  padding: 4px;
+  border: 1px solid gray;
+}
+.select:focus {
   outline: none;
   border: 2px solid rgb(0, 122, 255);
 }
