@@ -86,7 +86,7 @@
                         <p class="prod">Vendido por <?php echo $product['proveedor'] ?></p>
                         <p class="prod">$ <?php echo $product['Precio'] ?></p>
                     </div>
-                    <button type="button" id="<?php echo $product['codProduct'];?>">Comprar</button>
+                    <button type="button" id="<?php echo $product['codProduct'];?>" class="buyProd">Buy</button>
                 </div>
             <?php }?>
         </div>
@@ -97,5 +97,7 @@
           <p class="text">| Copyright 2021 Second Shop todos los derechos reservados |</p>
         </div>
       </footer>
+
+      <script src="../js/buyProduct.js"></script>
 </body>
 </html>

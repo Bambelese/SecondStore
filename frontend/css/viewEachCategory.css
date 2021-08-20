@@ -4,12 +4,27 @@
   margin-top: 15px;
 }
 .contProduct{
-  width: 80%;
   background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
   margin: auto;
   height: 140px;
 }
-
+.contProduct>button{
+  height:40px;
+}
+.buyProd{
+  background: rgb(142,142,147);
+  border: 0;
+  width: 68px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.contProduct>div{
+  width:60%;
+}
 .contProduct a {
   text-decoration: none;
   color: black;
