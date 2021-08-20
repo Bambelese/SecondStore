@@ -86,7 +86,10 @@
                         <p class="prod">Vendido por <?php echo $product['proveedor'] ?></p>
                         <p class="prod">$ <?php echo $product['Precio'] ?></p>
                     </div>
-                    <button type="button" id="<?php echo $product['codProduct'];?>" class="buyProd">Buy</button>
+                    <input type="number" value="1">
+                    <button type="button" id="<?php echo $product['codProduct'];?>" class="buyProd" data-id="<?php echo $product['codProduct'];?>" 
+                    data-prod="<?php echo $product['product'];?>" data-cat="<?php echo $product['codCategoria'];?>" data-cl="<?php echo $product['codClient'];?>"
+                    data-prov="<?php echo $product['proveedor'];?>" data-price="<?php echo $product['Precio'];?>">Buy</button>
                 </div>
             <?php }?>
         </div>
@@ -97,7 +100,8 @@
           <p class="text">| Copyright 2021 Second Shop todos los derechos reservados |</p>
         </div>
       </footer>
-
+      
+      <script src="../js/class/product.js"></script>
       <script src="../js/buyProduct.js"></script>
 </body>
 </html>
