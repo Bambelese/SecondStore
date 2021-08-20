@@ -2,6 +2,12 @@ const form = document.getElementById("getCategories");
 const nomProd = document.getElementById("product");
 const priceProd = document.getElementById("priceProduct");
 const quantityProd = document.getElementById("quantityProduct");
+const firstSection = document.getElementById("firstSection");
+const secondSection = document.getElementById("secondSection");
+const newProduct = document.getElementById("newProduct");
+
+secondSection.style.display = "none";
+newProduct.style.display = "none";
 
 var idCategory;
 form.onclick = () => {
@@ -15,7 +21,9 @@ form.onclick = () => {
     })
     .then((text) => {
       document.getElementById("s").innerHTML = text;
-
+      firstSection.style.display = "none";
+      secondSection.style.display = "block";
+      newProduct.style.display = "block";
       let itemsCategories = document.querySelectorAll(".opCategory");
 
       for (let i = 0; i < itemsCategories.length; i++) {

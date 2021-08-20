@@ -50,7 +50,7 @@
                             <h1>Empecemos completando algunos datos</h1>
                             <img src="../../img/publish.svg" alt="">
                         </div>
-                        <div class="contSecond">
+                        <div class="contSecond" id="firstSection">
                             <h1>Indica tu producto, marca y modelo</h1>
                             <p>Este será el título. Ten en cuenta que cuando tengas ventas, no podrás editarlo</p>
 
@@ -59,10 +59,8 @@
                                 <input type="number" name="quantity" id="quantityProduct" placeholder="Quantity">
                                 <button type="button" id="getCategories">Continue</button>
                         </div>
-
-                        <div class="contSecond">
-                            <h1>Indica tu producto, marca y modelo</h1>
-                            <p>Este será el título. Ten en cuenta que cuando tengas ventas, no podrás editarlo</p>
+                        <div class="contSecond" id="secondSection">
+                            <h1>Indica la categoria que pertenece tu producto</h1>
                             <div id="s" class="itCategories"> 
                             </div>
                         </div>
