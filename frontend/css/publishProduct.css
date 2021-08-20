@@ -54,3 +54,19 @@
   height: 350px;
   margin-top: 15px;
 }
+
+.contSecond>input {
+  border-radius: 4px;
+  height: 30px;
+  padding: 4px;
+  border: 1px solid gray;
+}
+
+.contSecond>input:hover {
+  border: 1px solid rgb(0, 122, 255);
+}
+
+.contSecond>input:focus {
+  outline: none;
+  border: 2px solid rgb(0, 122, 255);
+}

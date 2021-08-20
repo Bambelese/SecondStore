@@ -78,12 +78,11 @@
         <div class="container">
             <?php foreach ($listJsonDecodeProd as $product) { ?>
                 <div class="contProduct">
-                    <a href="viewEachCategory.php?var=<?php echo $product['codProduct'];?>">
-                        <div>
-                            <p><?php echo $product['product'] ?></p>
-                            <p>US$<?php echo $product['Precio'] ?></p>
-                        </div>
-                    </a>
+                    <div>
+                        <p><?php echo $product['product'] ?></p>
+                        <p>US$<?php echo $product['Precio'] ?></p>
+                    </div>
+                    <button type="button" id="<?php echo $product['codProduct'];?>">Comprar</button>
                 </div>
             <?php }?>
         </div>

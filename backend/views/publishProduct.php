@@ -24,15 +24,15 @@
           <div class="menu">
             <ul>
               <?php if($session == null || ''){?>
-                <li id="item"><a href="../Registro.html">Ingresar</a></li>
+                <li class="item"><a href="../Registro.html">Ingresar</a></li>
               <?php }else{ ?>
-                <li id="item">
+                <li class="item">
                     <a href="#"><?php echo $_SESSION['username'] ?></a>
                     <ul class="desple">
                         <li><a href="publishProduct.php">Vender</a></li>
                     </ul>
                 </li>
-                <li id="item"><a href="controllers/logOut.php">Cerrar Sesion</a></li>
+                <li class="item"><a href="controllers/logOut.php">Cerrar Sesion</a></li>
               <?php }?>
             </ul>
           </div>
