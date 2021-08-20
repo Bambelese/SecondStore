@@ -30,6 +30,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="../../estilos.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../../frontend/css/viewEachCategory.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -79,8 +82,9 @@
             <?php foreach ($listJsonDecodeProd as $product) { ?>
                 <div class="contProduct">
                     <div>
-                        <p><?php echo $product['product'] ?></p>
-                        <p>US$<?php echo $product['Precio'] ?></p>
+                        <p class="prod"><?php echo $product['product'] ?></p>
+                        <p class="prod">Vendido por <?php echo $product['proveedor'] ?></p>
+                        <p class="prod">$ <?php echo $product['Precio'] ?></p>
                     </div>
                     <button type="button" id="<?php echo $product['codProduct'];?>">Comprar</button>
                 </div>

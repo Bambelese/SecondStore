@@ -6,11 +6,18 @@
 .contProduct{
   width: 80%;
   background: white;
-  margin: 7px auto;
+  margin: auto;
   height: 140px;
 }
 
 .contProduct a {
   text-decoration: none;
   color: black;
+}
+.prod:nth-child(2){
+  color: rgb(99,99,102);
+  font-size: 0.85rem;
+}
+.prod:nth-child(3){
+  font-weight: bold;
 }
