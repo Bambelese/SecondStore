@@ -4,6 +4,8 @@ let btnBuy = document.querySelectorAll(".buyProd");
 
 for (let i = 0; i < btnBuy.length; i++) {
   btnBuy[i].onclick = (e) => {
+    console.log(e.target.getAttribute("data-id"));
+    console.log(e.target);
     let idProd = e.target.getAttribute("data-id");
     let product = e.target.getAttribute("data-prod");
     let codCategory = e.target.getAttribute("data-cat");
@@ -16,6 +18,6 @@ for (let i = 0; i < btnBuy.length; i++) {
 
     products.push(objProduct);
 
-    localStorage.setItem("products", JSON.stringify(objProduct));
+    localStorage.setItem("products", JSON.stringify(products));
   };
 }

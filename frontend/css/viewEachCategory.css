@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   margin-top: 15px;
 }
-.contProduct{
+.contProduct {
   background: white;
   display: flex;
   justify-content: space-around;
@@ -12,44 +12,46 @@
   margin: auto;
   height: 140px;
 }
-.contProduct div>input{
-  padding: 3;
+.contProduct div > input {
+  padding: 3px;
   border-radius: 3px;
   width: 45px;
   height: 30px;
-  border: 1px solid rgb(142, 142, 147)
+  border: 1px solid rgb(142, 142, 147);
+  text-align: center;
 }
-.contProduct div>input:focus{
+.contProduct div > input:focus {
   outline: none;
-  border: 2px solid rgb(0, 122, 255)
+  border: 2px solid rgb(0, 122, 255);
 }
-.contProduct>button{
-  height:40px;
+.contProduct > button {
+  height: 40px;
 }
-.buyProd{
-  background: rgb(142,142,147);
+.buyProd {
+  background: rgb(142, 142, 147);
   border: 0;
   width: 68px;
   border-radius: 7px;
   cursor: pointer;
+  height: 40px;
 }
-.dProd{
-  width:60%;
+.dProd {
+  width: 60%;
 }
-.opProd{
+.opProd {
   display: flex;
   justify-content: space-around;
   margin: auto 5px;
-  width:20%
+  width: 20%;
 }
 .contProduct a {
   text-decoration: none;
   color: black;
 }
-.prod:nth-child(2){
-  color: rgb(99,99,102);
+.prod:nth-child(2) {
+  color: rgb(99, 99, 102);
   font-size: 0.85rem;
 }
-.prod:nth-child(3){
+.prod:nth-child(3) {
   font-weight: bold;
 }
