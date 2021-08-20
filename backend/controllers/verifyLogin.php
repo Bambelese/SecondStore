@@ -13,8 +13,13 @@ if($_POST){
         echo ("Datos incorrectos");
     }else{
         session_start();
+
+        $idUser=$cd[0];
         $username=$cd[1];
+        
         $_SESSION['username']=$username;
+        $_SESSION['idUser']=$idUser;
+        
         header("location:../index.php");
     }
 }

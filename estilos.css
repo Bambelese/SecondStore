@@ -71,17 +71,17 @@ body {
   align-items: center;
 }
 
-.menu #item {
+.menu .item {
   padding: 5px;
   margin-right: 7px;
 }
 
-.menu #item a {
+.menu .item a {
   text-decoration: none;
   color: black;
 }
 
-#item > a {
+.item > a {
   font-size: 1.1rem;
 }
 
@@ -106,7 +106,7 @@ body {
 .desple li a {
   font-size: 1rem;
 }
-.menu #item:hover .desple {
+.menu .item:hover .desple {
   display: block;
 }
 

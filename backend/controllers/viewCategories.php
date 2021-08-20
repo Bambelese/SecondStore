@@ -10,14 +10,16 @@ require_once("../models/categoria.php");
     
 
     foreach ($listJsonDecode as $categories) {
-         $sd=$categories['Categoria'];
+        $id=$categories['CodCategoria'];
+        $sd=$categories['Categoria'];
          
-         print '<div class="itCategories">
-                    <div class="opCategory">
-                        <div>
-                            <p>'.$sd.'</p>
+
+         print '<div id="'.$id.'" class="itCategories">
+                    <button type=button class="opCategory" data-id="'.$id.'">
+                        <div data-id="'.$id.'">
+                            <p data-id="'.$id.'">'.$sd.'</p>
                         </div>
-                    </div>
-                </div';
+                    </button>
+                </div>';
     }
 ?>

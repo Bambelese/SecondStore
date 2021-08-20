@@ -45,6 +45,7 @@
             <div>
                 <div class="contS">
                     <div class="cont">
+                      <form method="POST" action="../controllers/createProduct.php">
                         <div class="contSFirst">
                             <h1>Empecemos completando algunos datos</h1>
                             <img src="../../img/publish.svg" alt="">
@@ -52,10 +53,11 @@
                         <div class="contSecond">
                             <h1>Indica tu producto, marca y modelo</h1>
                             <p>Este será el título. Ten en cuenta que cuando tengas ventas, no podrás editarlo</p>
-                            <form id="form" action>
-                                <input type="text" name="product">
-                                <button type="submit">Continue</button>
-                            </form>
+
+                                <input type="text" name="product" id="product" placeholder="Name Product">
+                                <input type="number" name="price" id="priceProduct" placeholder="Price">
+                                <input type="number" name="quantity" id="quantityProduct" placeholder="Quantity">
+                                <button type="button" id="getCategories">Continue</button>
                         </div>
 
                         <div class="contSecond">
@@ -64,6 +66,11 @@
                             <div id="s" class="itCategories"> 
                             </div>
                         </div>
+
+                        <div>
+                          <button type="submit" id="newProduct">Crear</button>
+                        </div>
+                      </form>
                     </div>
                 </div>
                 </div>

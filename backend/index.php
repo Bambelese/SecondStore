@@ -1,7 +1,14 @@
 <?php 
+  require_once("models/categoria.php");
   session_start();
   error_reporting(0);
   $session=$_SESSION['username'];
+
+  $category = new Categoria();
+  $cd=$category->View();
+
+  $listJson=json_encode($cd);
+  $listJsonDecode=json_decode($listJson,true);
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,25 +38,24 @@
         <!--Opciones-->   
           <div class="menu">
             <ul>
-              <li id="item">
+              <li class="item">
                 <a href="">Categorias</a>
                 <ul class="desple">
-                  <li><a href="Moda.html">Moda</a></li>
-                  <li><a href="Electro.html">Electrodomésticos</a></li>
-                  <li><a href="Muebles.html">Muebles</a></li>
+                  <?php foreach ($listJsonDecode as $categories) {
+                    echo "<li><a href='views/viewEachCategory.php?var=".$categories['CodCategoria']."'>".$categories['Categoria']."</a></li>";
+                  }?>
                 </ul>
               </li>
               <?php if($session == null || ''){?>
-                <li id="item"><a href="../Registro.html">Ingresar</a></li>
-
+                <li class="item"><a href="../Registro.html">Ingresar</a></li>
               <?php }else{ ?>
-                <li id="item">
+                <li class="item">
                     <a href="#"><?php echo $_SESSION['username'] ?></a>
                     <ul class="desple">
                         <li><a href="views/publishProduct.php">Vender</a></li>
                     </ul>
                 </li>
-                <li id="item"><a href="controllers/logOut.php">Cerrar Sesion</a></li>
+                <li class="item"><a href="controllers/logOut.php">Cerrar Sesion</a></li>
               <?php }?>
             </ul>
           </div>
