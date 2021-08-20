@@ -86,7 +86,7 @@
                         <p class="prod">Vendido por <?php echo $product['proveedor'] ?></p>
                         <p class="prod">$ <?php echo $product['Precio'] ?></p>
                     </div>
-                    <input type="number" value="1">
+                    <input type="number" value="1" min="1" max="<?php echo $product['Cantidad'];?>">
                     <button type="button" id="<?php echo $product['codProduct'];?>" class="buyProd" data-id="<?php echo $product['codProduct'];?>" 
                     data-prod="<?php echo $product['product'];?>" data-cat="<?php echo $product['codCategoria'];?>" data-cl="<?php echo $product['codClient'];?>"
                     data-prov="<?php echo $product['proveedor'];?>" data-price="<?php echo $product['Precio'];?>">Buy</button>
