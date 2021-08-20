@@ -38,7 +38,7 @@
         <!--Opciones-->   
           <div class="menu">
             <ul>
-              <li class="item">
+              <li class="item" id="opCat">
                 <a href="">Categorias</a>
                 <ul class="desple">
                   <?php foreach ($listJsonDecode as $categories) { ?>
@@ -55,7 +55,7 @@
                         <li><a href="views/publishProduct.php">Vender</a></li>
                     </ul>
                 </li>
-                <li class="item"><a href="controllers/logOut.php">Cerrar Sesion</a></li>
+                <li class="item"><a href="controllers/logOut.php" id="opLogOut">Cerrar Sesion</a></li>
               <?php }?>
             </ul>
           </div>
