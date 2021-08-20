@@ -75,7 +75,7 @@
     </header>
 
     <section>
-        <div>
+        <div class="container">
             <?php foreach ($listJsonDecodeProd as $product) { ?>
                 <div class="contProduct">
                     <a href="viewEachCategory.php?var=<?php echo $product['codProduct'];?>">
