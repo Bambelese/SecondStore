@@ -41,9 +41,9 @@
               <li class="item">
                 <a href="">Categorias</a>
                 <ul class="desple">
-                  <?php foreach ($listJsonDecode as $categories) {
-                    echo "<li><a href='views/viewEachCategory.php?var=".$categories['CodCategoria']."'>".$categories['Categoria']."</a></li>";
-                  }?>
+                  <?php foreach ($listJsonDecode as $categories) { ?>
+                    <li><a id="<?php echo $categories['CodCategoria'];?>" href="views/viewEachCategory.php?var=<?php echo $categories['CodCategoria'];?>"><?php echo $categories['Categoria']; ?></a></li>
+                  <?php }?>
                 </ul>
               </li>
               <?php if($session == null || ''){?>

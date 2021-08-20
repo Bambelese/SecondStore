@@ -29,6 +29,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="../../estilos.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../frontend/css/viewEachCategory.css" />
     <title>Document</title>
 </head>
 <body>
@@ -75,9 +76,16 @@
 
     <section>
         <div>
-        <?php foreach ($listJsonDecodeProd as $product) {
-                        echo "<li><a href='viewEachCategory.php?var=".$product['codProduct']."'>".$product['product']."</a></li>";
-        }?>
+            <?php foreach ($listJsonDecodeProd as $product) { ?>
+                <div class="contProduct">
+                    <a href="viewEachCategory.php?var=<?php echo $product['codProduct'];?>">
+                        <div>
+                            <p><?php echo $product['product'] ?></p>
+                            <p>US$<?php echo $product['Precio'] ?></p>
+                        </div>
+                    </a>
+                </div>
+            <?php }?>
         </div>
     </section>
 
